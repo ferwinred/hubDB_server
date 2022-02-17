@@ -18,6 +18,9 @@
     "express": "^4.17.2",
     "joi": "^17.6.0"
   },
+  "engines": {
+    "node": "16.14.0"
+  },
   "devDependencies": {
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
