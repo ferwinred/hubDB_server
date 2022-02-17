@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const morgan = require('morgan')
 const config = require("./lib/config");
 const routes = require("./routes");
 const error = require("./middlewares/handleError");
@@ -14,7 +13,6 @@ app.use(
     origin: config.cors
   })
 );
-app.use(morgan('dev'))
 app.use("/api", routes);
 app.use(notFound);
 app.use(error);
